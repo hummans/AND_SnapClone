@@ -40,19 +40,19 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="@color/connexion"
-            android:text="@string/connexion"
+            android:background="@color/colorRed"
+            android:text="@string/login_loginsignupactivity"
             android:textColor="@color/colorWhite"
-            android:textSize="32sp" />
+            android:textSize="@dimen/big_title_size" />
 
         <Button
             android:id="@+id/inscriptionButton"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="@color/inscription"
-            android:text="@string/inscription"
+            android:background="@color/colorBlue"
+            android:text="@string/signup_loginsignupactivity"
             android:textColor="@color/colorWhite"
-            android:textSize="32sp" />
+            android:textSize="@dimen/big_title_size" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

@@ -1,5 +1,6 @@
 package com.example.manon.snapclone;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -22,11 +23,11 @@ public class SplashScreen extends AppCompatActivity {
         logoView.startAnimation(anim);
 
         final Intent i = new Intent(getApplicationContext(), LogInSignUpActivity.class);
-
+        final Activity act = this;
         Thread thread = new Thread(){
             public void run(){
                 try {
-                    sleep(3000);
+                    sleep(1000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 } finally {

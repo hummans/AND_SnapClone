@@ -13,7 +13,6 @@ public class ChatFragment extends Fragment {
         return new ChatFragment();
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

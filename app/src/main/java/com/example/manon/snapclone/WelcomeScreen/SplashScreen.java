@@ -1,4 +1,4 @@
-package com.example.manon.snapclone;
+package com.example.manon.snapclone.WelcomeScreen;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+
+import com.example.manon.snapclone.AppActivity.LogInSignUpActivity;
+import com.example.manon.snapclone.R;
 
 public class SplashScreen extends AppCompatActivity {
 

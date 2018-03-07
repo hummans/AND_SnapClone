@@ -1,10 +1,12 @@
-package com.example.manon.snapclone;
+package com.example.manon.snapclone.AppActivity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.manon.snapclone.R;
 
 public class LogInSignUpActivity extends AppCompatActivity {
 

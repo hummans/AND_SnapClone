@@ -1,14 +1,18 @@
-package com.example.manon.snapclone;
+package com.example.manon.snapclone.AppActivity;
 
+import android.graphics.PixelFormat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.example.manon.snapclone.Fragments.CameraFragment;
+import com.example.manon.snapclone.Fragments.ChatFragment;
+import com.example.manon.snapclone.Fragments.StoryFragment;
+import com.example.manon.snapclone.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,7 +24,32 @@ public class MainActivity extends AppCompatActivity {
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
         FragmentPagerAdapter pagerAdapter = new MainPagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(pagerAdapter);
-        viewPager.setCurrentItem(1);
+        viewPager.setCurrentItem(0);
+        viewPager.setOffscreenPageLimit(3);
+
+        final View background = findViewById(R.id.viewPagerBackground);
+        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+                if (position == 0) {
+                    background.setBackgroundColor(getResources().getColor(R.color.colorLightBlule));
+                    background.setAlpha(1 - positionOffset);
+                } else if (position == 1) {
+                    background.setBackgroundColor(getResources().getColor(R.color.colorPurple));
+                    background.setAlpha(positionOffset);
+                }
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
 
     }
 

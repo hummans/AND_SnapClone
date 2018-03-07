@@ -1,11 +1,8 @@
-package com.example.manon.snapclone;
+package com.example.manon.snapclone.Fragments;
 
-import android.Manifest;
-import android.content.Context;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.hardware.Camera;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
@@ -15,8 +12,9 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
 import android.widget.Toast;
+
+import com.example.manon.snapclone.R;
 
 import java.io.IOException;
 import java.util.List;
@@ -37,9 +35,8 @@ public class CameraFragment extends Fragment implements SurfaceHolder.Callback {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_camera, container, false);
-
-        surfaceView = view.findViewById(R.id.surfaceView);
-        surfaceHolder = surfaceView.getHolder();
+            surfaceView = view.findViewById(R.id.surfaceView);
+            surfaceHolder = surfaceView.getHolder();
 
             if (ActivityCompat.checkSelfPermission(getContext(), android.Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED){
                 ActivityCompat.requestPermissions(getActivity(), new String[] {android.Manifest.permission.CAMERA}, CAMERA_REQUEST_CODE);

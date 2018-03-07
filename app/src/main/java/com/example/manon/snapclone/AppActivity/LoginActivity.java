@@ -1,20 +1,16 @@
-package com.example.manon.snapclone;
+package com.example.manon.snapclone.AppActivity;
 
 import android.content.Intent;
-import android.graphics.PorterDuff;
-import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 
-import org.w3c.dom.Text;
+import com.example.manon.snapclone.R;
 
 public class LoginActivity extends AppCompatActivity {
 

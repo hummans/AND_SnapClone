@@ -29,7 +29,7 @@ public class LoginActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(editUsername.getText().toString().equals("maphdev") && editPassword.getText().toString().equals("lolipop")){
+                if(editUsername.getText().toString().equals("maphdev") && editPassword.getText().toString().equals("a")){
                     setResult(2);
                     startActivity(i);
                     finish();

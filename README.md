@@ -13,6 +13,7 @@ Snapchat clone in Android Studio. Learning purpose only. Not finished yet !
 - Log In & Sign Up layouts
 - Intent
 - ViewPager / Fragment / FragmentPagerAdapter
+- RecyclerView & Adapter
 - Camera
 - SurfaceHolder
 - Animation
